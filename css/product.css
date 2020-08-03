@@ -1,0 +1,162 @@
+body{
+  background-image: linear-gradient(to bottom,green , white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main {
+  display: flex;
+ /* flex-direction: column;*/
+  justify-content: center;
+  flex-grow: 1;
+  top: 50px;
+  left: 100px;
+  background-color: transparent;
+  background-blend-mode: luminosity;
+  color: var(--main-white-color);
+}
+
+.page-main div {
+  max-width: 3000px;
+}
+/*___Table______________________________________________________*/
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  table-layout: fixed;
+  
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: transparent;
+ 
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+table img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  width:200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+/*______Button_____________*/
+.logout input[type="submit"]{
+  background: green;
+  border-radius: 20px;
+  padding: 8px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  transition: all 0.25s linear;
+}
+
+.logout input[type="submit"]:hover{
+  color: green;
+  background: #fff !important;
+}
+.logout input[type="submit"]:focus {
+  outline: none;
+}
+
+
+/*______textBox____________________*/
+.textbox .nice {
+  width: 32%;
+  border-radius: 20px;
+  border: 2px solid green;
+  background: transparent;
+  color: green;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+
+  padding: 8px 15px;
+}
+
+.textbox .nice:focus {
+  outline: none;
+}
